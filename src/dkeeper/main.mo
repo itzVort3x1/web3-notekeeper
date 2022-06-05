@@ -1,5 +1,6 @@
-actor {
-  public func greet(name : Text) : async Text {
-    return "Hello, " # name # "!";
+actor DKeeper {
+  type Note = {
+    title: Text;
+    content: Text;
   };
-};
+}
