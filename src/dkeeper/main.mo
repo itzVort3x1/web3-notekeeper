@@ -20,7 +20,7 @@ actor DKeeper {
     Debug.print(debug_show(notes));
   };
 
-  // public query func getNotes(): async List<Note>{
-  //   return notes;
-  // };
+  public query func readNotes(): async [Note]{
+    return List.toArray(notes);
+  };
 }
